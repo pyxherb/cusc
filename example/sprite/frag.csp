@@ -1,0 +1,16 @@
+type fragment;
+
+input {
+	position: vec4f {
+		semantic SV_POSITION;
+	},
+	vertexColor: vec4f {
+		semantic COLOR;
+	}
+}
+
+target SV_TARGET;
+
+def main(): float4 {
+	return vertexColor;
+}

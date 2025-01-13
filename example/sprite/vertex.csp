@@ -1,0 +1,26 @@
+type vertex;
+
+input {
+	positionIn: vec3f {
+		layout 0;
+		semantic POSITION;
+	},
+	colorIn: vec4f {
+		layout 1;
+		semantic COLOR;
+	}
+}
+
+output {
+	position: vec4f {
+		semantic SV_POSITION;
+	}
+	vertexColor: vec4f {
+		semantic COLOR;
+	}
+}
+
+def main() {
+	position = vec4f(positionIn, 1.0f);
+	vertexColor = colorIn;
+}
