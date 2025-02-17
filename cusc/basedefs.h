@@ -1,0 +1,11 @@
+#ifndef _CUSC_BASEDEFS_H_
+#define _CUSC_BASEDEFS_H_
+
+#include <peff/base/basedefs.h>
+
+#define CUSC_DLLEXPORT PEFF_DLLEXPORT
+#define CUSC_DLLIMPORT PEFF_DLLIMPORT
+#define CUSC_FORCEINLINE PEFF_FORCEINLINE
+#define CUSC_NOINLINE PEFF_NOINLINE
+
+#endif

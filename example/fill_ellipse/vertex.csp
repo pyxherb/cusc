@@ -1,0 +1,18 @@
+type vertex;
+
+input {
+	position: float2 {
+		layout 0;
+		semantic POSITION;
+	}
+}
+
+output {
+	positionOut: float4 {
+		semantic SV_POSITION;
+	}
+}
+
+def main() {
+	positionOut = float4(position, 0.0, 1.0);
+}

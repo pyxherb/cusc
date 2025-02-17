@@ -2,21 +2,7 @@
 /// @file shader.h
 /// @brief Declarations about shaders.
 ///
-/// @copyright Copyright (C) 2025 Clench Project
-///
-/// This program is free software : you can redistribute it and / or modify it
-/// under the terms of the GNU Affero General Public License as published by
-/// the Free Software Foundation, version 3.
-///
-///	This program is distributed in the hope that it will be useful,
-///	but WITHOUT ANY WARRANTY; without even the implied warranty of
-/// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU Affero
-/// General Public License for more details.
-///
-/// You should have received a copy of the GNU Affero General Public License
-/// along with this program. If not, see <https://www.gnu.org/licenses/>.
-///
-/// SPDX-License-Identifier: AGPL-3.0-only
+/// @copyright Copyright (C) 2025 Clench Project, all rights reserved.
 ///
 #ifndef _CUSC_AST_SHADER_H_
 #define _CUSC_AST_SHADER_H_
@@ -86,7 +72,7 @@ namespace cusc {
 	class VertexOutputVar {
 		std::string name;
 		VertexShaderOutputSemantic semantic;
-	}
+	};
 
 	enum class FragmentShaderInputSemanticType {
 		None = 0,
@@ -124,7 +110,7 @@ namespace cusc {
 	class FragmentOutputVar {
 		std::string name;
 		FragmentShaderOutputSemantic semantic;
-	}
+	};
 
 	class VertexShader : public Shader {
 	public:
